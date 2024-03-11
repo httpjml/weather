@@ -16,9 +16,12 @@
     <div class = "weather-app">
     <header>
         <form class="search-form" id="search-form">
-            <input type = "search" placeholder="Enter a city.." 
-            required id="search-form-input"
-            class="search-form-input"/>
+            <input type = "search" 
+            placeholder="Enter a city.." 
+            required 
+            id="search-form-input"
+            class="search-form-input"
+            />
             <input type = "submit" value = "Search" class="search-form-button"/>
         </form>
     </header>
@@ -30,16 +33,20 @@
         <span id="time"></span>,
         <span id="description"></span> 
         <br />
-        Humidity <strong id="humidity">44%</strong>,
+        Humidity <strong id="humidity"></strong>,
         Wind: <strong id="wind-speed"></strong>
     </p>
 </div>
 <div class = "weather-app-temperature-container">
-    <div class = "weather-app-icon">🌤</div> 
+    <div id="icon"></div>
+
     <div class = "weather-app-temperature" id="temperature"></div> 
     <div class = "weather-app-unit">°F </div>
 </div>
+</div>
 </main>
+
+
     <footer> Coded by 
         <a href="https://github.com/httpjml">
         Joanna Leonardo</a>, is <a href = "https://github.com/httpjml/weather">
