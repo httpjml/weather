@@ -13,22 +13,26 @@
 <body>
     <div class = "weather-app">
     <header>
-        <form>
-            <input type = "search" placeholder="Enter a city.." required/>
-            <input type = "submit" value = "search" />
+        <form class="search-form">
+            <input type = "search" placeholder="Enter a city.." required class="search-form-input"/>
+            <input type = "submit" value = "Search" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-    <h1>New York</h1>
-    <p>
+    <h1 class = "weather-app-city">New York</h1>
+    <p class = "weather-app-details">
         Wednesday 2:23, scattered clouds
         <br />
-        Humidity 44%, Wind: 3.4 mph
+        Humidity <strong>44%</strong>, Wind: <strong>3.4 mph</strong>
     </p>
 </div>
-    <div>🌤 12°C</div>
-
+<div class = "weather-app-temperature-container">
+    <div class = "weather-app-icon">🌤</div> 
+    <div class = "weather-app-temperature">12</div> 
+    <div class = "weather-app-unit">°C </div>
+</div>
 </main>
     <footer> Coded by 
         <a href="https://github.com/httpjml">
@@ -37,6 +41,7 @@
         and <a href = "https://joanna-shecodes-weather-app.netlify.app/">hosted on Netlify</a>
     </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 
 </html>
